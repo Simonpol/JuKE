@@ -18,7 +18,7 @@ def generalContent():
     general_body.pack(expand = True, fill = BOTH, padx=5, pady=5)
     # System information field
     sysinfo_body = LabelFrame(general_body, text = "System Info", width = 200, height = 400)
-
+# This is a validation rules, to avoid deleting or paste third-party content
     def computername_validate(new_value):
         return new_value == computername
     vcomcmd = (window.register(computername_validate), '%P')
